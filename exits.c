@@ -24,7 +24,7 @@ char *_strncpy(char *dest, char *src, int n)
 		while (j < n)
 		{
 			dest[j] = '\0';
-		j++;
+			j++;
 		}
 	}
 	return (s);
@@ -47,7 +47,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i] != '\0')
 		i++;
 	while (src[j] != '\0' && j < n)
-	{
+{
 		dest[i] = src[j];
 		i++;
 		j++;
@@ -72,4 +72,3 @@ char *_strchr(char *s, char c)
 
 	return (NULL);
 }
-
